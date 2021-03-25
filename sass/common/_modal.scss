@@ -1,0 +1,37 @@
+.modal {
+  @include absolute-centered(true, true);
+
+  padding: 40px;
+  height: 581px;
+  width: 528px;
+
+  @include transition(transform);
+
+  border-radius: 4px;
+  background-color: var(--white-color);
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+}
+
+.modal__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  @include flex-centered(center, center);
+
+  height: 30px;
+  width: 30px;
+
+  background-color: var(--white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  @include transition(fill);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}

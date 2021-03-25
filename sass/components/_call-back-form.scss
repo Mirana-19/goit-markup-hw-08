@@ -1,0 +1,147 @@
+.call-back-form__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.call-back-form__label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  &:first-of-type {
+    margin-top: 12px;
+  }
+
+  &:not(:first-of-type) {
+    margin-top: 10px;
+  }
+}
+
+.call-back-form__input-container {
+  position: relative;
+
+  display: block;
+  margin-top: 4px;
+
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.call-back-form__input {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 42px;
+
+  &:focus-within,
+  &:hover {
+    border-color: var(--accent-color);
+
+    & + .call-back-form__icon {
+      fill: var(--accent-color);
+    }
+  }
+}
+
+.call-back-form__icon {
+  @include absolute-centered(false, true);
+  left: 12px;
+
+  @include transition(fill);
+}
+
+.call-back-form__input,
+.call-back-form__textarea {
+  width: 100%;
+  resize: none;
+  border: 1px solid;
+  border-color: rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+
+  @include transition(border-color);
+}
+
+.call-back-form__textarea {
+  margin-top: 4px;
+  height: 120px;
+  padding: 12px 16px;
+
+  &:focus-within,
+  &:hover {
+    border-color: var(--accent-color);
+  }
+
+  &::placeholder {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.call-back-form__terms-label {
+  display: flex;
+  align-items: center;
+
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.call-back-form__terms-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.call-back-form__button {
+  display: block;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px 55px 10px 56px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  border-radius: 4px;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &:hover,
+  &:focus {
+    background-color: rgb(24, 140, 232);
+  }
+}
+
+.call-back-form__checkbox {
+  appearance: none;
+}
+
+.call-back-form__check-icon {
+  display: block;
+  margin-right: 7px;
+
+  cursor: pointer;
+  @include transition(background-color, fill);
+
+  .call-back-form__checkbox:checked + & {
+    fill: var(--accent-color);
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    background-image: url(../images/checkbox.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+}
