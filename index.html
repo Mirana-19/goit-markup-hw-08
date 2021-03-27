@@ -175,12 +175,20 @@
           <ul class="offers-list">
             <li class="offers-list__item">
               <div class="offers-list__thumb">
-                <img
-                  src="images/1.jpg"
-                  alt="создание лендинга"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/offers/programming.jpg    1x,
+                      ./images/offers/programming-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/offers/programming.jpg"
+                    alt="desktop applications"
+                    width="370"
+                  />
+                </picture>
+
                 <div class="offers-list__overlay">
                   <p class="offers-list__description">Десктопные приложения</p>
                 </div>
@@ -188,12 +196,20 @@
             </li>
             <li class="offers-list__item">
               <div class="offers-list__thumb">
-                <img
-                  src="images/2.jpg"
-                  alt="оптимизация под мобильные устройства"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/offers/applications-design.jpg    1x,
+                      ./images/offers/applications-design-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/offers/applications-design.jpg"
+                    alt="mobile applications"
+                    width="370"
+                  />
+                </picture>
+
                 <div class="offers-list__overlay">
                   <p class="offers-list__description">Мобильные приложения</p>
                 </div>
@@ -201,7 +217,19 @@
             </li>
             <li class="offers-list__item">
               <div class="offers-list__thumb">
-                <img src="images/3.jpg" alt="дизайн" width="370" height="294" />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/offers/ui-design.jpg    1x,
+                      ./images/offers/ui-design-2x.jpg 2x
+                    "
+                  />
+                  <img
+                    src="./images/offers/ui-design.jpg"
+                    alt="ui-design"
+                    width="370"
+                  />
+                </picture>
                 <div class="offers-list__overlay">
                   <p class="offers-list__description">Дизайнерские решения</p>
                 </div>

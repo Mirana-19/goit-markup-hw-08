@@ -6,6 +6,12 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+
+  @media screen and(min-width: 1200px) {
+    padding-top: 200px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .benefits-list__title {
@@ -24,7 +30,8 @@
 }
 
 .team-section__title,
-.clients-section__title {
+.clients-section__title,
+.offers-section__title {
   font-size: 28px;
   font-weight: 700;
   line-height: 1.18;
@@ -39,6 +46,16 @@
 .team-section__title {
   @media screen and(min-width: 768px) {
     margin-bottom: 30px;
+  }
+}
+
+.offers-section__title,
+.team-section__title,
+.clients-section__title {
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
   }
 }
 

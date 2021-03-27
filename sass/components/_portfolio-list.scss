@@ -12,8 +12,13 @@
     margin-top: 30px;
   }
   @media screen and (min-width: 768px) {
-    max-width: 354px;
+    min-width: 354px;
     flex-basis: calc((100% - (4 * 15px)) / 2);
+    margin: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 370px;
+    flex-basis: calc((100% - (6 * 15px)) / 3);
     margin: 15px;
   }
 }
@@ -29,10 +34,13 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-  }
+  // @media screen and (min-width: 768px) {
+  //   min-height: 440px;
+  // }
+
+  // @media screen and (min-width: 1200px) {
+  //   min-height: 404px;
+  // }
 }
 
 .portfolio-list__image {

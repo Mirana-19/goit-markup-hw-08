@@ -8,7 +8,27 @@
 
 .clients-section,
 .portfolio-section,
-.team-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.team-section,
+.benefits-section,
+.offers-section {
+  @media screen and (max-width: 1199px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.clients-section,
+.portfolio-section,
+.team-section,
+.offers-section {
+  @media screen and(min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.benefits-section {
+  @media screen and(min-width:1200px) {
+    padding-top: 94px;
+  }
 }

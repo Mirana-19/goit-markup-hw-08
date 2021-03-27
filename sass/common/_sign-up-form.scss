@@ -1,5 +1,11 @@
 .sign-up-form {
-  margin-top: 60px;
+  @media screen and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .sign-up-form__label {
@@ -8,6 +14,10 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--white-color);
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
 }
 
 .sign-up-form__input {
@@ -38,6 +48,10 @@
 
   @media screen and (min-width: 768px) {
     min-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 358px;
   }
 }
 

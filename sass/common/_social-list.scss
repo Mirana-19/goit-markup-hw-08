@@ -1,8 +1,12 @@
 .social-list {
   display: flex;
   align-items: center;
-  justify-content: center;
+
   margin-top: 20px;
+
+  @media screen and (max-width: 1199px) {
+    justify-content: center;
+  }
 }
 
 .social-list__item:not(:last-child) {
@@ -18,4 +22,13 @@
   fill: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
+  @media screen and (min-width: 1200px) {
+    @include transition(background-color);
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
 }
