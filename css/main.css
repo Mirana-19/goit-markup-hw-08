@@ -1702,6 +1702,12 @@ img {
   fill: var(--social-links-grey);
 }
 
+@media screen and (min-width: 768px) {
+  .clients-list__logo {
+    max-width: 230px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .clients-list__logo {
     max-width: 170px;
@@ -1711,12 +1717,6 @@ img {
 .clients-list__logo:hover, .clients-list__logo:focus {
   fill: var(--accent-color);
   border-color: var(--accent-color);
-}
-
-@media screen and (min-width: 768px) {
-  .clients-list__logo:hover, .clients-list__logo:focus {
-    max-width: 230px;
-  }
 }
 
 .portfolio-btn-list {
