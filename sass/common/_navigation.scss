@@ -1,35 +1,49 @@
 .navigation {
   display: flex;
-}
-
-.navigation-list {
-  display: flex;
   align-items: center;
 }
 
-.navigation-list__item:not(:last-child) {
-  margin-right: 50px;
-}
+.navigation-list {
+  display: none;
 
-.navigation-list__link {
-  position: relative;
-
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-
-  @include transition(color);
-  color: var(--title-color);
-
-  &:hover {
-    color: var(--accent-color);
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
   }
 
+  // &:not(:last-child) {
+  //   margin-right: 50px;
+  // }
+}
+
+.mob-menu-open {
+  margin-left: auto;
+  background-color: var(--white-color);
+  &:hover,
   &:focus {
-    color: var(--accent-color);
+    fill: var(--accent-color);
   }
 }
+
+// .navigation-list__item .navigation-list__link {
+//   position: relative;
+
+//   font-size: 14px;
+//   font-weight: 500;
+//   line-height: 1.17;
+//   letter-spacing: 0.02em;
+
+//   @include transition(color);
+//   color: var(--title-color);
+
+//   &:hover {
+//     color: var(--accent-color);
+//   }
+
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }
 
 //Current link
 
@@ -43,25 +57,25 @@
 
 // Navigation link underline
 
-.navigation-list__link::after {
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 0;
+// .navigation-list__link::after {
+//   content: '';
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
 
-  display: block;
-  height: 4px;
-  width: 100%;
+//   display: block;
+//   height: 4px;
+//   width: 100%;
 
-  transform: translateY(28px);
-  @include transition(opacity);
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  opacity: 0;
-}
+//   transform: translateY(28px);
+//   @include transition(opacity);
+//   background-color: var(--accent-color);
+//   border-radius: 2px;
+//   opacity: 0;
+// }
 
-.navigation-list__link:hover {
-  &.navigation-list__link::after {
-    opacity: 1;
-  }
-}
+// .navigation-list__link:hover {
+//   &.navigation-list__link::after {
+//     opacity: 1;
+//   }
+// }

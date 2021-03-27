@@ -21,6 +21,17 @@
           <a href="index.html" class="logo logo__header">
             <span class="logo__part">Web</span>Studio</a
           >
+          <button class="mob-menu-open js-open-menu">
+            <svg
+              class="navigation__open-icon"
+              width="40"
+              height="40"
+              aria-label="навигация"
+            >
+              <use href="images/icons-sprite.svg#mobile-menu"></use>
+            </svg>
+          </button>
+
           <ul class="navigation-list">
             <li class="navigation-list__item">
               <a
@@ -202,10 +213,9 @@
 
             <li class="team-list__item">
               <img
-                src="images/4.jpg"
+                srcset="igor-demyanenko-mob.jpg x1, igor-demyanenko-mob.jpg x2 "
+                src="images/team/igor-demyanenko-mob.jpg"
                 alt="сотрудник компании 1"
-                width="270"
-                height="260"
               />
               <div class="team-list__container">
                 <h3 class="team-list__member">Игорь Демьяненко</h3>
@@ -247,10 +257,9 @@
 
             <li class="team-list__item">
               <img
-                src="images/5.jpg"
+                srcset="olga-repina-mob.jpg x1, olga-repina-mob.jpg x2"
+                src="images/team/olga-repina-mob.jpg"
                 alt="сотрудник компании 2"
-                width="270"
-                height="260"
               />
               <div class="team-list__container">
                 <h3 class="team-list__member">Ольга Репина</h3>
@@ -292,10 +301,9 @@
 
             <li class="team-list__item">
               <img
-                src="images/6.jpg"
+                srcset="nikolay-tarasov-mob.jpg x1, nikolay-tarasov-mob.jpg x2"
+                src="images/team/nikolay-tarasov-mob.jpg"
                 alt="сотрудник компании 3"
-                width="270"
-                height="260"
               />
               <div class="team-list__container">
                 <h3 class="team-list__member">Николай Тарасов</h3>
@@ -337,10 +345,9 @@
 
             <li class="team-list__item">
               <img
-                src="images/7.jpg"
+                srcset="ihail-yermakov-mob.jpg x1, ihail-yermakov-mob.jpg x2"
+                src="images/team/mihail-yermakov-mob.jpg"
                 alt="сотрудник компании 4"
-                width="270"
-                height="260"
               />
               <div class="team-list__container">
                 <h3 class="team-list__member">Михаил Ермаков</h3>
@@ -510,7 +517,7 @@
           </ul>
         </div>
 
-        <!-- SIGN UP FORM -->
+        <!-- SIGN UP FORM FOOTER -->
 
         <form class="sign-up-form" name="sign-up-form">
           <label class="sign-up-form__label">
@@ -532,6 +539,38 @@
         </form>
       </div>
     </footer>
+
+    <!-- MOBILE-MENU -->
+
+    <div class="mob-menu js-menu-container" id="mobile-menu">
+      <button class="mob-menu__close-btn js-close-menu">
+        <svg class="mob-menu__close-icon" width="40" height="40">
+          <use href="images/icons-sprite.svg#close-mobile-menu"></use>
+        </svg>
+      </button>
+
+      <ul class="mob-nav">
+        <li class="mob-nav__link mob-nav__link--current">
+          <a href="index.html">Студия</a>
+        </li>
+        <li class="mob-nav__link"><a href="portfolio.html">Портфолио</a></li>
+        <li class="mob-nav__link"><a href="">Контакты</a></li>
+      </ul>
+      <ul class="mob-contacts-list">
+        <li class="mob-contacts-list__tel">
+          <a href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="mob-contacts-list__mail">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mob-social-list">
+        <li class="mob-social-list__item"><a href="">Instagram</a></li>
+        <li class="mob-social-list__item"><a href="">Twitter</a></li>
+        <li class="mob-social-list__item"><a href="">Facebook</a></li>
+        <li class="mob-social-list__item"><a href="">LinkedIn</a></li>
+      </ul>
+    </div>
 
     <!-- MODAL -->
 
@@ -613,8 +652,10 @@
               <use href="./images/icons-sprite.svg#border"></use>
             </svg>
 
-            Соглашаюсь с рассылкой и принимаю
-            <a href="" class="call-back-form__terms-link">Условия договора</a>
+            <p class="call-back-form__terms-text">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="" class="call-back-form__terms-link">Условия договора</a>
+            </p>
           </label>
           <button class="call-back-form__button" type="submit">
             Отправить
@@ -623,6 +664,16 @@
       </div>
     </div>
 
+    <!-- JS SCRIPT -->
+
     <script src="./js/modal.js"></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

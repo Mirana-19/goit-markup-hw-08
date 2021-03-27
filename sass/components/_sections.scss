@@ -1,15 +1,14 @@
-.portfolio-section,
-.clients-section,
-.team-section,
-.offers-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.benefits-section {
-  padding-top: 94px;
+.hero-section {
+  text-align: center;
 }
 
 .team-section {
   background-color: var(--background-color);
+}
+
+.clients-section,
+.portfolio-section,
+.team-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }

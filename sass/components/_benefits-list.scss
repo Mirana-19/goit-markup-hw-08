@@ -1,20 +1,9 @@
-.benefits-list {
-  display: flex;
-  margin-right: -30px;
-  flex-wrap: wrap;
-}
-
-.benefits-list__item {
-  margin-right: 30px;
-  flex-basis: calc(100% / 4 - 30px);
-}
-
 .benefits-list__container {
   height: 120px;
-  background-color: var(--background-color);
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--background-color);
 }
 
 .benefits-list__icon {
@@ -31,8 +20,14 @@
 }
 
 .benefits-list__text {
+  margin-top: 10px;
   font-size: 14px;
   line-height: 1.7;
-  margin-top: 10px;
   text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+  .benefits-list {
+    padding: 60px 0 60px 0;
+  }
 }

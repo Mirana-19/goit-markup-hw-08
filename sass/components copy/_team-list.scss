@@ -1,0 +1,63 @@
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-right: -30px;
+}
+
+.team-list__item {
+  flex-basis: calc(100% / 4 - 30px);
+  background-color: var(--white-color);
+  margin-right: 30px;
+  border-radius: 4px;
+  box-shadow: 00px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team-list__container {
+  padding: 30px 32px;
+}
+
+.team-list__member {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--title-color);
+  text-align: center;
+}
+
+.team-list__role {
+  font-size: 16px;
+  line-height: 1.2;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* TEAM MEMBERS SOCIAL LINKS */
+
+.team-list__social-list {
+  display: flex;
+  margin-top: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team-list__social-links {
+  display: flex;
+}
+
+.team-list__social-bg {
+  @include flex-centered(center, center) width: 44px;
+  @include transition(fill, background-color);
+  height: 44px;
+  fill: var(--social-links-grey);
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    width: 44px;
+    height: 44px;
+    background-color: var(--accent-color);
+    fill: var(--white-color);
+  }
+}

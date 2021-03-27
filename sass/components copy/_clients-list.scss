@@ -1,0 +1,30 @@
+.clients-list {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: -30px;
+}
+
+.clients-list__item {
+  flex-basis: calc(100% / 6 - 30px);
+}
+
+.clients-list__logo {
+  @include flex-centered(center, center);
+  @include transition(fill, border-color);
+
+  margin-right: 30px;
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid;
+  border-radius: 4px;
+  border-color: var(--social-links-grey);
+  fill: var(--social-links-grey);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
