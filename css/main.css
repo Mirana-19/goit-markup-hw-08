@@ -364,6 +364,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container__header {
     display: -webkit-box;
@@ -394,6 +400,14 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -613,6 +627,20 @@ img {
 
 .contacts-list__link:hover, .contacts-list__link:focus {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list__icon--envelope {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-list__icon--phone {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1169,8 +1197,8 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero-section__bg-image {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/hero/bg-tablet.jpg);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero/bg-tablet.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/bg-tablet.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-tablet.jpg);
     max-width: 768px;
     height: 400px;
   }
@@ -1178,7 +1206,7 @@ img {
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-section__bg-image .box {
-    background-image: url(../../images/hero/bg-tablet@2x.jpg);
+    background-image: url(../images/hero/bg-tablet@2x.jpg);
   }
 }
 
