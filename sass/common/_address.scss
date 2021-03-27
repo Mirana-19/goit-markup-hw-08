@@ -25,14 +25,14 @@
   margin-top: 20px;
 }
 
-@media screen and (max-width: 1999px) {
+@media screen and (min-width: 320px) {
   .address-contact-list,
   .address-contact-list__item:nth-child(2) {
     margin-top: 8px;
   }
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1200px) {
   .address-contact-list,
   .address-contact-list__item:nth-child(2) {
     margin-top: 9px;

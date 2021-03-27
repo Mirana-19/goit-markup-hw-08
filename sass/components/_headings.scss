@@ -9,15 +9,16 @@
 }
 
 .benefits-list__title {
+  margin-top: 30px;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
+  text-transform: uppercase;
   color: var(--title-color);
-  text-align: center;
 }
 
 .offers-section__title {
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
@@ -35,6 +36,12 @@
   margin-bottom: 30px;
 }
 
+.team-section__title {
+  @media screen and(min-width: 768px) {
+    margin-bottom: 30px;
+  }
+}
+
 .footer__social-title {
   margin-top: 60px;
   font-size: 14px;
@@ -42,4 +49,8 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--white-color);
+
+  @media screen and(min-width: 768px) {
+    margin-top: 0;
+  }
 }

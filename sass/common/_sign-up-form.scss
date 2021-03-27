@@ -35,6 +35,10 @@
   &:hover {
     border-color: var(--accent-color);
   }
+
+  @media screen and (min-width: 768px) {
+    min-width: 450px;
+  }
 }
 
 .sign-up-form__input::-webkit-input-placeholder {
