@@ -584,28 +584,29 @@
           <use href="images/icons-sprite.svg#close-mobile-menu"></use>
         </svg>
       </button>
-
-      <ul class="mob-nav">
-        <li class="mob-nav__link mob-nav__link--current">
-          <a href="index.html">Студия</a>
-        </li>
-        <li class="mob-nav__link"><a href="portfolio.html">Портфолио</a></li>
-        <li class="mob-nav__link"><a href="#">Контакты</a></li>
-      </ul>
-      <ul class="mob-contacts-list">
-        <li class="mob-contacts-list__tel">
-          <a href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-        <li class="mob-contacts-list__mail">
-          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-      </ul>
-      <ul class="mob-social-list">
-        <li class="mob-social-list__item"><a href="#">Instagram</a></li>
-        <li class="mob-social-list__item"><a href="#">Twitter</a></li>
-        <li class="mob-social-list__item"><a href="#">Facebook</a></li>
-        <li class="mob-social-list__item"><a href="#">LinkedIn</a></li>
-      </ul>
+      <div class="mob-menu__container">
+        <ul class="mob-nav">
+          <li class="mob-nav__link mob-nav__link--current">
+            <a href="index.html">Студия</a>
+          </li>
+          <li class="mob-nav__link"><a href="portfolio.html">Портфолио</a></li>
+          <li class="mob-nav__link"><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="mob-contacts-list">
+          <li class="mob-contacts-list__tel">
+            <a href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="mob-contacts-list__mail">
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="mob-social-list">
+          <li class="mob-social-list__item"><a href="#">Instagram</a></li>
+          <li class="mob-social-list__item"><a href="#">Twitter</a></li>
+          <li class="mob-social-list__item"><a href="#">Facebook</a></li>
+          <li class="mob-social-list__item"><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
     </div>
 
     <!-- MODAL -->
@@ -690,7 +691,9 @@
 
             <p class="call-back-form__terms-text">
               Соглашаюсь с рассылкой и принимаю
-              <a href="#" class="call-back-form__terms-link">Условия договора</a>
+              <a href="#" class="call-back-form__terms-link"
+                >Условия договора</a
+              >
             </p>
           </label>
           <button class="call-back-form__button" type="submit">

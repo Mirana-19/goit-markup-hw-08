@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
 
-  margin: -15px;
+  margin: -30px;
 }
 
 .clients-list__item {
@@ -22,15 +22,15 @@
   @include flex-centered(center, center);
   @include transition(fill, border-color);
 
-  max-width: 210px;
+  min-width: 210px;
   height: 90px;
 
   @media screen and (min-width: 768px) {
-    max-width: 230px;
+    min-width: 230px;
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 170px;
+    min-width: 170px;
   }
 
   border: 1px solid;

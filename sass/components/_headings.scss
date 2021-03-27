@@ -1,5 +1,4 @@
 .hero-section__title {
-  padding-top: 118px;
   font-size: 26px;
   font-weight: 900;
   line-height: 1.6;
@@ -8,7 +7,6 @@
   color: var(--white-color);
 
   @media screen and(min-width: 1200px) {
-    padding-top: 200px;
     font-size: 44px;
     line-height: 1.36;
   }
